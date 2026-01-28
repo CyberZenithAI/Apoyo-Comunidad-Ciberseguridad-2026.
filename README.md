@@ -77,4 +77,8 @@ Iniciar y consolidar mi carrera profesional en roles como **Soporte TI**, **Anal
 
 ---
 
+## 🤝 Apoyo a la Comunidad 2026
+Este repositorio está orientado a apoyar a estudiantes, autodidactas y perfiles junior
+que desean iniciar en Soporte TI, SOC L1 y Blue Team, con contenido práctico en español.
+
 > "La seguridad no es solo proteger sistemas, es **aprender, compartir y fortalecer a la comunidad** cada día."
