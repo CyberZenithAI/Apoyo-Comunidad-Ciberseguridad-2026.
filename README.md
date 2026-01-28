@@ -1,81 +1,87 @@
 # 👋 Hola, soy Joaquin Ocampo
 
-## 🔐 Soporte TI | Analista Junior de Ciberseguridad | SOC L1 • Blue Team • OSINT
+## 🔐 Soporte TI | Analista Junior Ciberseguridad | SOC L1 • Blue Team • OSINT
 
-Apasionado por la **ciberseguridad defensiva y el soporte TI**, con enfoque en **monitoreo, detección y respuesta a incidentes**, así como en la **ayuda activa a nuevos estudiantes y profesionales** que inician en el área. Durante **2026** me encuentro en constante aprendizaje, fortaleciendo habilidades técnicas, documentación clara y buenas prácticas alineadas a entornos reales de **SOC L1**.
-
----
-
-## 🚀 Propuesta de Valor (Enfoque 2026)
-
-* Mentalidad **Blue Team** con base técnica ofensiva (me permite entender mejor al atacante).
-* Capacidad de **aprendizaje rápido**, documentación clara y trabajo disciplinado.
-* Orientado a **procesos, alertas y mejora continua** en seguridad y soporte operativo.
-* Interés genuino por crecer dentro de un **SOC profesional** y aportar desde el día uno.
+Apasionado por la **ciberseguridad defensiva y soporte TI**, con enfoque en **monitoreo, detección y respuesta a incidentes**, y ayudando a **nuevos estudiantes y profesionales** a iniciarse en 2026.
 
 ---
 
-## 🛠️ Habilidades Técnicas
+## 🚀 Mi propuesta de valor 2026
+
+* Mentalidad **Blue Team** + conocimiento ofensivo básico
+* Aprendizaje rápido y documentación clara
+* Orientado a **alertas, procesos y mejora continua**
+* Compromiso con un **SOC profesional desde el día uno**
+
+---
+
+## 🧰 Habilidades Técnicas
 
 ### 🔎 SOC & Blue Team
+- Monitoreo y análisis de alertas
+- Análisis básico de logs (Windows / Linux)
+- Detección de amenazas y eventos sospechosos
+- Fundamentos de respuesta a incidentes
 
-* Monitoreo y análisis de alertas de seguridad
-* Análisis básico de logs (Windows / Linux)
-* Detección de amenazas y eventos sospechosos
-* Fundamentos de respuesta a incidentes
-
-### 🧰 Herramientas
-
-* Wazuh / Elastic (nivel básico–intermedio)
-* Kali Linux (uso controlado y práctico)
-* Wireshark (análisis básico de tráfico)
-* OSINT (búsqueda y correlación de información)
+### 🛠️ Herramientas
+- Wazuh / Elastic (básico–intermedio)
+- Kali Linux (uso práctico y controlado)
+- Wireshark (análisis básico)
+- OSINT ético y defensivo
 
 ### 🖥️ Sistemas & Redes
-
-* Linux (Ubuntu, Kali) – nivel intermedio
-* Windows Server (fundamentos)
-* Redes: TCP/IP, DNS, HTTP/HTTPS, puertos y servicios
-
----
-
-## 📂 Proyectos y Aportes a la Comunidad
-
-* 🛡️ **Laboratorio SOC básico**: Implementación y monitoreo con Wazuh
-* 🌐 **OSINT práctico**: Recolección y análisis de información pública
-* 🧪 **Labs de seguridad**: Prácticas defensivas y ofensivas controladas
-
-*(Proyectos documentados en español, con enfoque en aprendizaje práctico y apoyo a nuevos integrantes de la comunidad en 2026)*
+- Linux (Ubuntu, Kali) – nivel intermedio
+- Windows Server (fundamentos)
+- TCP/IP, DNS, HTTP/HTTPS, puertos y servicios
 
 ---
 
-## 🎓 Formación & Certificados
+## 📂 Proyectos y Mini Retos
 
-* Carrera técnica (SENATI)
-* Cursos introductorios de Ciberseguridad y SOC
-* Aprendizaje continuo autodidacta (2026)
+- 🛡️ **Laboratorio SOC básico**: Implementación y monitoreo Wazuh  
+- 🌐 **OSINT práctico**: Recolección y análisis de información pública  
+- 🧪 **Mini retos de seguridad**: Ejercicios prácticos para principiantes  
+
+*(Todo en español, con enfoque práctico y apoyo a la comunidad 2026)*
+
+---
+
+## 🎓 Formación & Certificaciones
+
+- Carrera técnica (SENATI)
+- Cursos intro SOC y Ciberseguridad
+- Aprendizaje autodidacta continuo (2026)
 
 ---
 
 ## 🌍 Idiomas
 
-* Español: Nativo
-* Inglés: A2 (en progreso hacia B1)
+- Español: Nativo  
+- Inglés: A2 (en progreso a B1)
 
 ---
 
-## 🎯 Objetivo Profesional 2026 (Rol Junior)
+## 🎯 Objetivo Profesional 2026
 
-Iniciar y consolidar mi carrera profesional en roles como **Soporte TI**, **Analista SOC L1**, **Analista Junior de Ciberseguridad**, **Analista Junior Blue Team** u **OSINT**, aportando compromiso, disciplina y una actitud activa de aprendizaje y colaboración, tanto a nivel nacional como internacional.
+Roles: **Soporte TI, Analista SOC L1, Analista Junior Blue Team, OSINT**, aportando disciplina, actitud proactiva y aprendizaje continuo.
+
+---
+
+## 🤝 Apoyo a la Comunidad 2026
+
+Este repositorio ayuda a **estudiantes y perfiles junior** que quieren iniciar en Soporte TI, SOC L1 y Blue Team, con contenido práctico en español.
 
 ---
 
 ## 📫 Contacto
 
-* GitHub: [https://github.com/CyberZenithAI/](https://github.com/CyberZenithAI/)
-* LinkedIn: [https://www.linkedin.com/in/joaquin-ocampo-cybersecurity/](https://www.linkedin.com/in/joaquin-ocampo-cybersecurity/)
+- GitHub: [CyberZenithAI](https://github.com/CyberZenithAI/)  
+- LinkedIn: [Joaquin Ocampo](https://www.linkedin.com/in/joaquin-ocampo-cybersecurity/)
 
 ---
+
+> "La seguridad no es solo proteger sistemas, es **aprender, compartir y fortalecer la comunidad cada día**."
+
 
 ## 🤝 Apoyo a la Comunidad 2026
 Este repositorio está orientado a apoyar a estudiantes, autodidactas y perfiles junior
