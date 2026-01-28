@@ -1,18 +1,28 @@
-# 🛣️ Roadmap: Soporte TI ➝ SOC L1 ➝ Blue Team (2026)
+# Roadmap Ciberseguridad 2026
 
-🎮 **Nivel 1 – Soporte TI**
-- Windows / Linux básico ✅
-- Redes básicas ✅
-- Atención a incidentes simples ✅
+## Soporte TI → SOC L1 → Blue Team
 
-🎮 **Nivel 2 – SOC L1**
-- Análisis de logs ✅
-- Monitoreo de alertas ✅
-- SIEM (Wazuh) básico ✅
+### 1. Fundamentos Soporte TI
+- Windows Server (AD, DNS, DHCP, GPO)
+- Redes Cisco (VLANs, ACLs, Switching)
+- Virtualización (Hyper-V / VMware)
+- Hardening básico de endpoints y servidores
 
-🎮 **Nivel 3 – Blue Team Junior**
-- Fundamentos de detección y respuesta
-- Gestión de incidentes y tickets
-- Mejora continua de alertas y procesos
+### 2. SOC Nivel 1 (L1)
+- Monitoreo de alertas y logs
+- Análisis de logs Windows/Linux
+- PCAP y análisis de tráfico (Wireshark)
+- Enriquecimiento de indicadores (OSINT, VirusTotal, AbuseIPDB)
+- Escalamiento y documentación de incidentes
 
-💡 **Tip del mentor:** No intentes saltarte niveles; domina cada etapa antes de avanzar.
+### 3. Blue Team
+- Wazuh SIEM (reglas, correlación, análisis de eventos)
+- Threat Intelligence & OSINT
+- Vulnerability Testing controlado
+- Hardening avanzado y seguridad perimetral
+
+### 4. Offensive Basics
+- Pentesting web y OWASP Top 10
+- Introducción a Malware Analysis
+- Purple Team (AD / AzureAD)
+- Offensive Agent AI
