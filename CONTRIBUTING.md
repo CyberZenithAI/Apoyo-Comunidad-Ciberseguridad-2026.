@@ -1,9 +1,11 @@
-# Contribuciones
+# Contribuye al Repositorio
 
-Este repositorio promueve aprendizaje ético y responsable en ciberseguridad.  
 Si quieres aportar:
 
-1. Respeta la ética y la legalidad
-2. Documenta tus aportes de forma clara
-3. Usa español claro
-4. Nada de contenido ilegal o malicioso
+1. Clona este repositorio
+2. Crea un branch nuevo
+3. Agrega tu contenido en la carpeta correspondiente
+4. Haz un Pull Request
+5. Espera revisión y merge
+
+¡Gracias por ayudar a formar nuevos talentos en ciberseguridad! 🚀
