@@ -1,4 +1,4 @@
-# 👋 Hola, soy Juan Pérez
+# 👋 Hola, soy Joaquin Ocampo
 
 ## 🔐 Soporte TI | Analista Junior de Ciberseguridad | SOC L1 • Blue Team • OSINT
 
