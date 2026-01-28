@@ -1,214 +1,957 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Joaquin Ocampo | SOC Analyst L1 | Blue Team | Cybersecurity 2026</title>
-  <meta name="description" content="Joaquin Ocampo – Analista de Ciberseguridad Junior SOC L1, Blue Team, SIEM Wazuh, Log Analysis, OSINT y Vulnerability Testing. Perfil técnico 2026 con laboratorios reales y enfoque ético." />
-  <meta name="keywords" content="SOC Analyst L1, Blue Team Junior, SIEM Wazuh, Cybersecurity Peru, Log Analysis, Incident Response, OSINT, Vulnerability Testing" />
-  <meta name="author" content="Joaquin Ocampo" />
-
-  <!-- Seguridad básica -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self';">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu;
-      background: #0b0f14;
-      color: #e6e6e6;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 3rem 1rem;
-      text-align: center;
-      background: linear-gradient(180deg, #0f172a, #020617);
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.3rem;
-    }
-
-    header p {
-      color: #94a3b8;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 3rem 1rem;
-    }
-
-    h2 {
-      color: #38bdf8;
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 0.4rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
-
-    .card {
-      background: #020617;
-      border: 1px solid #1e293b;
-      padding: 1.3rem;
-      border-radius: 10px;
-    }
-
-    .card h3 {
-      color: #7dd3fc;
-      margin-top: 0;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: #020617;
-      border-top: 1px solid #1e293b;
-      color: #64748b;
-      font-size: 0.9rem;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingeniero de Soporte TI SENATI | Ciberseguridad Blue Team SOC L1</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/000000/security-checked--v1.png">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #0f172a;
+            --accent-color: #3b82f6;
+        }
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            scroll-behavior: smooth;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .active-tab {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease forwards;
+        }
+    </style>
 </head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navegación -->
+    <nav class="sticky top-0 z-10 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    <a href="#inicio" class="text-xl font-bold text-gray-800">TI SENATI<span class="text-blue-600"> Cyber</span></a>
+                </div>
+                
+                <!-- Menú para móviles -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                
+                <!-- Menú para escritorio -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
+                    <a href="#certificaciones" class="text-gray-700 hover:text-blue-600 font-medium">Certificaciones</a>
+                    <a href="#laboratorios" class="text-gray-700 hover:text-blue-600 font-medium">Labs</a>
+                    <a href="#recursos" class="text-gray-700 hover:text-blue-600 font-medium">Recursos</a>
+                    <a href="#guia" class="text-gray-700 hover:text-blue-600 font-medium">Guía</a>
+                    <a href="#comentarios" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
+                </div>
+            </div>
+            
+            <!-- Menú móvil (oculto por defecto) -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3 pb-3">
+                <a href="#inicio" class="block text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
+                <a href="#certificaciones" class="block text-gray-700 hover:text-blue-600 font-medium">Certificaciones</a>
+                <a href="#laboratorios" class="block text-gray-700 hover:text-blue-600 font-medium">Labs</a>
+                <a href="#recursos" class="block text-gray-700 hover:text-blue-600 font-medium">Recursos</a>
+                <a href="#guia" class="block text-gray-700 hover:text-blue-600 font-medium">Guía</a>
+                <a href="#comentarios" class="block text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
+            </div>
+        </div>
+    </nav>
 
-<body>
+    <!-- Sección Inicio / About -->
+    <section id="inicio" class="gradient-bg py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0 fade-in">
+                    <div class="relative w-64 h-64 mx-auto">
+                        <!-- Avatar placeholder -->
+                        <div class="w-full h-full rounded-full bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                            <i class="fas fa-user-secret text-white text-8xl"></i>
+                        </div>
+                        <div class="absolute -bottom-3 -right-3 bg-green-500 text-white px-4 py-2 rounded-full font-bold">
+                            <i class="fas fa-shield-alt mr-2"></i> SOC L1
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3 md:pl-12 fade-in">
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                        Ingeniero de Soporte TI <span class="text-blue-600">SENATI</span>
+                    </h1>
+                    <div class="text-xl text-gray-600 mb-8 max-w-3xl">
+                        Especializado en <span class="font-semibold text-blue-600">Ciberseguridad Blue Team</span> con enfoque en 
+                        detección y respuesta a incidentes, análisis SOC Nivel 1, y monitoreo de seguridad con herramientas como Wazuh.
+                    </div>
+                    
+                    <div class="bg-white rounded-xl p-6 shadow-md mb-8">
+                        <h2 class="text-xl font-bold text-gray-800 mb-4">Mi recorrido profesional</h2>
+                        <p class="text-gray-600 mb-4">
+                            Desde 2023 me he especializado en seguridad de sistemas, obteniendo certificaciones en Blue Team y SOC L1. 
+                            He implementado soluciones de monitoreo con Wazuh, realizado análisis forense básico y desarrollado laboratorios 
+                            prácticos para fortalecer habilidades en ciberseguridad defensiva.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Blue Team</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">SOC Analyst L1</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Wazuh</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Incident Response</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">SENATI</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#laboratorios" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-flask mr-2"></i> Explorar Laboratorios
+                        </a>
+                        <a href="#certificaciones" class="px-6 py-3 bg-white text-blue-600 border border-blue-600 font-medium rounded-lg hover:bg-blue-50 transition">
+                            <i class="fas fa-certificate mr-2"></i> Ver Certificaciones
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<header>
-  <h1>👋 Joaquin Ocampo</h1>
-  <p>
-    Analista de Ciberseguridad Junior | SOC Analyst L1 | Blue Team | SIEM & Log Analysis  
-    <br>
-    Ingeniería de Soporte TI – SENATI (4/6 semestre, 2026)
-  </p>
-</header>
+    <!-- Sección Certificaciones -->
+    <section id="certificaciones" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 section-title">Certificaciones</h2>
+            <p class="text-gray-600 mb-12 max-w-3xl">
+                Certificaciones obtenidas en el área de ciberseguridad, con enfoque en Blue Team, SOC Nivel 1 y herramientas de monitoreo.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta de certificación 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 card-hover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Completado</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium ml-2">Blue Team</span>
+                            </div>
+                            <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Fundamentos de Ciberseguridad Blue Team</h3>
+                        <p class="text-gray-600 mb-4">
+                            Certificación que cubre los fundamentos de seguridad defensiva, detección de amenazas y respuesta a incidentes.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i> Nivel: Intermedio</span>
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Ver certificado <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de certificación 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 card-hover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Completado</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium ml-2">SOC L1</span>
+                            </div>
+                            <i class="fas fa-desktop text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">SOC Analyst Nivel 1</h3>
+                        <p class="text-gray-600 mb-4">
+                            Certificación para analistas de SOC nivel 1, enfocada en monitoreo de seguridad, triaje de alertas y respuesta inicial.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i> Nivel: Intermedio</span>
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Ver certificado <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta de certificación 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 card-hover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">En progreso</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium ml-2">Wazuh</span>
+                            </div>
+                            <i class="fas fa-chart-line text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Wazuh para SOC y Blue Team</h3>
+                        <p class="text-gray-600 mb-4">
+                            Implementación y gestión de Wazuh SIEM para detección de amenazas, monitoreo de logs y respuesta a incidentes.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i> Nivel: Avanzado</span>
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Ver progreso <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+                    <i class="fab fa-github mr-2"></i> Ver todas las certificaciones en GitHub
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>🔐 Sobre mí</h2>
-  <p>
-    Analista de Ciberseguridad Junior enfocado en operaciones SOC Nivel 1, Blue Team y análisis de logs.
-    Experiencia práctica en laboratorios reales con Wazuh SIEM, OSINT y testing de vulnerabilidades en entornos controlados.
-    Perfil disciplinado, ético y orientado a procesos SOC empresariales.
-  </p>
-</section>
+    <!-- Sección Laboratorios / Labs -->
+    <section id="laboratorios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 section-title">Laboratorios / Labs</h2>
+            <p class="text-gray-600 mb-8 max-w-3xl">
+                Laboratorios prácticos en entornos controlados para desarrollar habilidades en ciberseguridad defensiva.
+            </p>
+            
+            <!-- Filtros por nivel -->
+            <div class="flex flex-wrap gap-4 mb-12">
+                <button class="px-5 py-2 rounded-lg bg-blue-600 text-white font-medium filter-btn active-tab" data-filter="all">
+                    Todos los niveles
+                </button>
+                <button class="px-5 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium filter-btn" data-filter="principiante">
+                    Principiante
+                </button>
+                <button class="px-5 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium filter-btn" data-filter="intermedio">
+                    Intermedio
+                </button>
+                <button class="px-5 py-2 rounded-lg bg-gray-200 text-gray-700 font-medium filter-btn" data-filter="avanzado">
+                    Avanzado
+                </button>
+            </div>
+            
+            <!-- Contenedor de laboratorios -->
+            <div id="labs-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Laboratorio 1 -->
+                <div class="lab-card bg-white rounded-xl overflow-hidden border border-gray-200 card-hover" data-level="principiante">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Principiante</span>
+                            <div class="flex space-x-2">
+                                <button class="toggle-command text-blue-600 hover:text-blue-800" data-lab="1">
+                                    <i class="fas fa-terminal"></i>
+                                </button>
+                                <button class="toggle-screenshot text-blue-600 hover:text-blue-800" data-lab="1">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Análisis básico de logs con Wazuh</h3>
+                        <p class="text-gray-600 mb-4">
+                            Aprende a analizar logs de sistema para detectar actividades sospechosas usando la consola de Wazuh.
+                        </p>
+                        
+                        <!-- Comandos (oculto por defecto) -->
+                        <div id="commands-lab-1" class="hidden mb-4">
+                            <div class="bg-gray-800 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                                <p class="mb-2"># Verificar estado del servicio Wazuh</p>
+                                <p class="text-green-400">systemctl status wazuh-manager</p>
+                                <p class="mb-2 mt-4"># Buscar intentos de autenticación fallidos</p>
+                                <p class="text-green-400">grep "authentication failure" /var/ossec/logs/alerts/alerts.json | head -10</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Screenshot (oculto por defecto) -->
+                        <div id="screenshot-lab-1" class="hidden mb-4">
+                            <div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-image text-gray-400 text-4xl"></i>
+                                <p class="ml-3 text-gray-500">Screenshot del dashboard de Wazuh</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i> ~1 hora</span>
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Ver detalles <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Laboratorio 2 -->
+                <div class="lab-card bg-white rounded-xl overflow-hidden border border-gray-200 card-hover" data-level="intermedio">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Intermedio</span>
+                            <div class="flex space-x-2">
+                                <button class="toggle-command text-blue-600 hover:text-blue-800" data-lab="2">
+                                    <i class="fas fa-terminal"></i>
+                                </button>
+                                <button class="toggle-screenshot text-blue-600 hover:text-blue-800" data-lab="2">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Detección de malware con VirusTotal API</h3>
+                        <p class="text-gray-600 mb-4">
+                            Configuración de integración con VirusTotal para análisis automático de archivos sospechosos.
+                        </p>
+                        
+                        <!-- Comandos -->
+                        <div id="commands-lab-2" class="hidden mb-4">
+                            <div class="bg-gray-800 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                                <p class="mb-2"># Consultar un hash en VirusTotal API</p>
+                                <p class="text-green-400">curl --request GET \</p>
+                                <p class="text-green-400 pl-4">--url "https://www.virustotal.com/api/v3/files/{hash}" \</p>
+                                <p class="text-green-400 pl-4">--header "x-apikey: YOUR_API_KEY"</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Screenshot -->
+                        <div id="screenshot-lab-2" class="hidden mb-4">
+                            <div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-image text-gray-400 text-4xl"></i>
+                                <p class="ml-3 text-gray-500">Screenshot de la integración con VirusTotal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i> ~2 horas</span>
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Ver detalles <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Laboratorio 3 -->
+                <div class="lab-card bg-white rounded-xl overflow-hidden border border-gray-200 card-hover" data-level="avanzado">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">Avanzado</span>
+                            <div class="flex space-x-2">
+                                <button class="toggle-command text-blue-600 hover:text-blue-800" data-lab="3">
+                                    <i class="fas fa-terminal"></i>
+                                </button>
+                                <button class="toggle-screenshot text-blue-600 hover:text-blue-800" data-lab="3">
+                                    <i class="fas fa-image"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Respuesta a incidentes en entorno SOC</h3>
+                        <p class="text-gray-600 mb-4">
+                            Simulación de un incidente de seguridad y ejecución del proceso completo de respuesta.
+                        </p>
+                        
+                        <!-- Comandos -->
+                        <div id="commands-lab-3" class="hidden mb-4">
+                            <div class="bg-gray-800 text-gray-100 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                                <p class="mb-2"># Aislar un endpoint comprometido</p>
+                                <p class="text-green-400">netsh advfirewall firewall add rule name="Block_Malicious_IP" dir=in action=block remoteip=192.168.1.100</p>
+                                <p class="mb-2 mt-4"># Crear imagen forense de disco</p>
+                                <p class="text-green-400">dd if=/dev/sda of=/mnt/forensic/disk_image.img bs=4M status=progress</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Screenshot -->
+                        <div id="screenshot-lab-3" class="hidden mb-4">
+                            <div class="bg-gray-200 h-48 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-image text-gray-400 text-4xl"></i>
+                                <p class="ml-3 text-gray-500">Screenshot del proceso de respuesta a incidentes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-500 text-sm"><i class="far fa-clock mr-1"></i> ~4 horas</span>
+                            <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Ver detalles <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
+                    <i class="fab fa-github mr-2"></i> Ver más laboratorios en GitHub
+                </a>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>🛡️ Habilidades Técnicas</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>SOC & Blue Team</h3>
-      <ul>
-        <li>Monitoreo y triage de alertas</li>
-        <li>Clasificación y escalamiento</li>
-        <li>Incident Response L1</li>
-        <li>Documentación técnica</li>
-      </ul>
-    </div>
+    <!-- Sección Recursos -->
+    <section id="recursos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 section-title">Recursos</h2>
+            <p class="text-gray-600 mb-12 max-w-3xl">
+                Herramientas, cursos y repositorios educativos recomendados para el aprendizaje en ciberseguridad.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Recurso 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 card-hover">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Wazuh SIEM</h3>
+                    <p class="text-gray-600 mb-4">
+                        Plataforma open source de seguridad para detección de amenazas, integración de logs y monitoreo de integridad.
+                    </p>
+                    <a href="https://wazuh.com" target="_blank" class="text-blue-600 font-medium hover:text-blue-800">
+                        Visitar sitio <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Recurso 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 card-hover">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Wireshark</h3>
+                    <p class="text-gray-600 mb-4">
+                        Analizador de protocolos de red para capturar y analizar tráfico de red en tiempo real.
+                    </p>
+                    <a href="https://www.wireshark.org" target="_blank" class="text-blue-600 font-medium hover:text-blue-800">
+                        Descargar <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Recurso 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 card-hover">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Kali Linux</h3>
+                    <p class="text-gray-600 mb-4">
+                        Distribución Linux especializada en pruebas de penetración y auditoría de seguridad.
+                    </p>
+                    <a href="https://www.kali.org" target="_blank" class="text-blue-600 font-medium hover:text-blue-800">
+                        Descargar <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+                
+                <!-- Recurso 4 -->
+                <div class="bg-gray-50 rounded-xl p-6 border border-gray-200 card-hover">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Burp Suite Community</h3>
+                    <p class="text-gray-600 mb-4">
+                        Herramienta para pruebas de seguridad en aplicaciones web, con versiones gratuita y profesional.
+                    </p>
+                    <a href="https://portswigger.net/burp" target="_blank" class="text-blue-600 font-medium hover:text-blue-800">
+                        Descargar <i class="fas fa-external-link-alt ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Repositorios educativos -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8">Repositorios educativos recomendados</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-github text-3xl text-gray-800 mr-4"></i>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">Awesome Blue Team</h4>
+                                <p class="text-gray-600">Colección de recursos para defensa en ciberseguridad</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/fabacab/awesome-cybersecurity-blueteam" target="_blank" class="text-blue-600 font-medium hover:text-blue-800">
+                            Acceder al repositorio <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-github text-3xl text-gray-800 mr-4"></i>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">SOC Analyst Tools</h4>
+                                <p class="text-gray-600">Herramientas y scripts para analistas de SOC</p>
+                            </div>
+                        </div>
+                        <a href="https://github.com/certsocietegenerale/SOC-Open-Source-Tools" target="_blank" class="text-blue-600 font-medium hover:text-blue-800">
+                            Acceder al repositorio <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>SIEM & Logs</h3>
-      <ul>
-        <li>Wazuh SIEM (Docker)</li>
-        <li>Windows Event Logs</li>
-        <li>Linux auth.log</li>
-        <li>PCAP con Wireshark</li>
-      </ul>
-    </div>
+    <!-- Sección Guía práctica / Recomendaciones -->
+    <section id="guia" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 section-title">Guía práctica</h2>
+            <p class="text-gray-600 mb-12 max-w-3xl">
+                Consejos para nuevos talentos en ciberseguridad y cómo progresar de nivel 7/10 a nivel 10/10.
+            </p>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl p-8 shadow-md mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">De 7/10 a 10/10: Ruta de mejora continua</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-blue-600 font-bold">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Automatización de tareas repetitivas</h4>
+                                    <p class="text-gray-600">
+                                        Desarrolla scripts en Python o Bash para automatizar análisis de logs, escaneos de vulnerabilidades y reportes.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-blue-600 font-bold">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Dominio de herramientas de SIEM</h4>
+                                    <p class="text-gray-600">
+                                        Profundiza en Wazuh, Elastic Stack o Splunk. Aprende a crear reglas personalizadas y dashboards efectivos.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-blue-600 font-bold">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Certificaciones especializadas</h4>
+                                    <p class="text-gray-600">
+                                        Obtén certificaciones como CompTIA Security+, CySA+, o certificaciones específicas de fabricantes.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <span class="text-blue-600 font-bold">4</span>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Participación en comunidades</h4>
+                                    <p class="text-gray-600">
+                                        Únete a foros, Discord y grupos de ciberseguridad. Comparte conocimientos y resuelve desafíos técnicos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Consejos para nuevos talentos</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-lightbulb text-yellow-500 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Construye tu laboratorio personal</h4>
+                                    <p class="text-gray-600">
+                                        Crea tu propio entorno de pruebas con máquinas virtuales. Experimenta sin miedo a romper sistemas productivos.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-network-wired text-blue-500 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Aprende networking básico</h4>
+                                    <p class="text-gray-600">
+                                        Comprende TCP/IP, DNS, firewalls y proxies. Es fundamental para análisis de tráfico y detección de amenazas.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-book-reader text-green-500 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Documenta todo lo que haces</h4>
+                                    <p class="text-gray-600">
+                                        Mantén un blog técnico o documenta tus laboratorios en GitHub. Te ayudará a reforzar conocimientos y crear portafolio.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-hands-helping text-purple-500 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Busca un mentor</h4>
+                                    <p class="text-gray-600">
+                                        Conéctate con profesionales experimentados que puedan guiarte en tu carrera y resolver dudas específicas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-100">
+                            <p class="text-blue-800">
+                                <i class="fas fa-quote-left mr-2"></i>
+                                La ciberseguridad es un campo en constante evolución. La curiosidad y la capacidad de aprender continuamente son tus mejores herramientas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>OSINT & Threat Intel</h3>
-      <ul>
-        <li>VirusTotal</li>
-        <li>AbuseIPDB</li>
-        <li>Attack Surface Mapping</li>
-        <li>Análisis de contexto</li>
-      </ul>
-    </div>
-  </div>
-</section>
+    <!-- Sección Comentarios / Feedback -->
+    <section id="comentarios" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2 section-title">Comentarios y Feedback</h2>
+            <p class="text-gray-600 mb-12 max-w-3xl">
+                Comparte tus preguntas, sugerencias o solicita recursos adicionales. Tu feedback es valioso para mejorar este espacio.
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Formulario de contacto -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Envíame un mensaje</h3>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tu nombre">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Asunto</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="" selected disabled>Selecciona un asunto</option>
+                                <option value="pregunta">Pregunta técnica</option>
+                                <option value="recurso">Solicitud de recurso</option>
+                                <option value="sugerencia">Sugerencia para el sitio</option>
+                                <option value="colaboracion">Posible colaboración</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane mr-2"></i> Enviar mensaje
+                        </button>
+                        
+                        <p class="text-gray-500 text-sm text-center mt-4">
+                            También puedes contactarme a través de 
+                            <a href="https://github.com/tisenati-cyber" class="text-blue-600 hover:text-blue-800">GitHub</a> o 
+                            <a href="https://linkedin.com/in/tisenati-cyber" class="text-blue-600 hover:text-blue-800">LinkedIn</a>.
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Sección de Disqus (placeholder) -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Preguntas y comentarios de la comunidad</h3>
+                    
+                    <div class="text-center py-12">
+                        <i class="fas fa-comments text-gray-300 text-6xl mb-6"></i>
+                        <h4 class="text-xl font-bold text-gray-700 mb-4">Foro de discusión</h4>
+                        <p class="text-gray-600 mb-8">
+                            Esta sección está configurada para integrarse con Disqus. Los visitantes pueden dejar preguntas, respuestas y comentarios sobre los temas tratados en el sitio.
+                        </p>
+                        
+                        <div class="bg-gray-200 rounded-lg p-6 mb-8">
+                            <h5 class="font-bold text-gray-800 mb-4">Ejemplo de integración con Disqus:</h5>
+                            <div class="text-left">
+                                <div class="mb-6">
+                                    <div class="flex items-center mb-2">
+                                        <div class="w-8 h-8 bg-blue-500 rounded-full mr-3"></div>
+                                        <div>
+                                            <p class="font-bold text-gray-800">Usuario_123</p>
+                                            <p class="text-gray-500 text-sm">Hace 2 días</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">¿Alguien tiene experiencia implementando Wazuh en entorno cloud? Me interesaría conocer mejores prácticas.</p>
+                                </div>
+                                
+                                <div class="ml-8">
+                                    <div class="flex items-center mb-2">
+                                        <div class="w-8 h-8 bg-green-500 rounded-full mr-3"></div>
+                                        <div>
+                                            <p class="font-bold text-gray-800">Admin_TI_SENATI</p>
+                                            <p class="text-gray-500 text-sm">Hace 1 día</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">Sí, he implementado Wazuh en AWS y Azure. Te recomiendo comenzar con la documentación oficial y usar los scripts de auto-deployment que proporcionan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button id="load-disqus" class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-comment-alt mr-2"></i> Cargar comentarios de Disqus
+                        </button>
+                        
+                        <p class="text-gray-500 text-sm mt-4">
+                            Al hacer clic, se cargará el widget de Disqus para ver y publicar comentarios reales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>🧪 Laboratorios Destacados</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>SOC L1 – SSH Brute Force</h3>
-      <p>
-        Detección y respuesta a ataques SSH usando Wazuh SIEM, reglas personalizadas,
-        análisis de logs y enriquecimiento con Threat Intelligence.
-      </p>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-shield-alt text-blue-400 text-2xl"></i>
+                        <a href="#inicio" class="text-xl font-bold text-white">TI SENATI<span class="text-blue-400"> Cyber</span></a>
+                    </div>
+                    <p class="max-w-md">
+                        Sitio educativo y profesional sobre ciberseguridad Blue Team, SOC L1 y herramientas de monitoreo para el año 2026.
+                    </p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://github.com/tisenati-cyber" target="_blank" class="text-gray-400 hover:text-white text-2xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tisenati-cyber" target="_blank" class="text-gray-400 hover:text-white text-2xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/tisenati-cyber" target="_blank" class="text-gray-400 hover:text-white text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2026 Ingeniero de Soporte TI SENATI - Especialista en Ciberseguridad Blue Team SOC L1. Todos los derechos reservados.</p>
+                <p class="mt-2 text-sm">Este sitio es para fines educativos. Las herramientas y recursos mencionados son propiedad de sus respectivos dueños.</p>
+            </div>
+        </div>
+    </footer>
 
-    <div class="card">
-      <h3>OSINT – Attack Surface Mapping</h3>
-      <p>
-        Identificación de activos expuestos, subdominios y tecnologías web con enfoque
-        preventivo y ético.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Infraestructura Segura</h3>
-      <p>
-        Windows Server 2016, Active Directory, GPOs, hardening y segmentación de red Cisco (VLANs, ACLs).
-      </p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>🎓 Certificaciones Relevantes</h2>
-  <ul>
-    <li>Blue Team Level 1 – Security Blue Team</li>
-    <li>SOC Analyst – LetsDefend</li>
-    <li>Foundations of Log Analysis – Red Team Leaders</li>
-    <li>Purple Team – Active Directory & AzureAD</li>
-    <li>Malware Analysis Introduction</li>
-    <li>Offensive Agent AI</li>
-    <li>Cisco Junior Cybersecurity Analyst</li>
-  </ul>
-</section>
-
-<section>
-  <h2>⚖️ Ética & Seguridad</h2>
-  <p>
-    Todos los laboratorios y pruebas se realizan en entornos aislados y controlados,
-    con fines educativos. No se promueve hacking ilegal ni uso malicioso de herramientas.
-    Enfoque alineado a estándares profesionales SOC y Blue Team.
-  </p>
-</section>
-
-<section>
-  <h2>📫 Contacto</h2>
-  <p>
-    📍 Lima, Perú – Remoto / Híbrido  
-    <br>
-    📧 webdev.student123@outlook.com  
-    <br>
-    🔗 <a href="https://github.com/CyberZenithAI" target="_blank">GitHub – CyberZenithAI</a>
-  </p>
-</section>
-
-<footer>
-  © 2026 Joaquin Ocampo – Cybersecurity | SOC | Blue Team  
-</footer>
-
+    <!-- JavaScript -->
+    <script>
+        // Menú móvil
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            
+            // Cambiar ícono
+            const icon = this.querySelector('i');
+            if (menu.classList.contains('hidden')) {
+                icon.className = 'fas fa-bars text-xl';
+            } else {
+                icon.className = 'fas fa-times text-xl';
+            }
+        });
+        
+        // Cerrar menú móvil al hacer clic en un enlace
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+                document.getElementById('mobile-menu-button').querySelector('i').className = 'fas fa-bars text-xl';
+            });
+        });
+        
+        // Filtros para laboratorios
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Actualizar botones activos
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active-tab');
+                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                });
+                
+                this.classList.add('active-tab');
+                this.classList.remove('bg-gray-200', 'text-gray-700');
+                
+                const filter = this.getAttribute('data-filter');
+                const labs = document.querySelectorAll('.lab-card');
+                
+                labs.forEach(lab => {
+                    if (filter === 'all' || lab.getAttribute('data-level') === filter) {
+                        lab.style.display = 'block';
+                        // Animación fade in
+                        lab.style.animation = 'fadeIn 0.5s ease forwards';
+                    } else {
+                        lab.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Toggle para comandos en laboratorios
+        document.querySelectorAll('.toggle-command').forEach(button => {
+            button.addEventListener('click', function() {
+                const labId = this.getAttribute('data-lab');
+                const commandDiv = document.getElementById(`commands-lab-${labId}`);
+                const screenshotDiv = document.getElementById(`screenshot-lab-${labId}`);
+                
+                // Ocultar screenshot si está visible
+                if (screenshotDiv && !screenshotDiv.classList.contains('hidden')) {
+                    screenshotDiv.classList.add('hidden');
+                }
+                
+                // Mostrar/ocultar comandos
+                commandDiv.classList.toggle('hidden');
+                
+                // Cambiar estilo del botón
+                if (commandDiv.classList.contains('hidden')) {
+                    this.classList.remove('text-blue-800');
+                    this.classList.add('text-blue-600');
+                } else {
+                    this.classList.remove('text-blue-600');
+                    this.classList.add('text-blue-800');
+                }
+            });
+        });
+        
+        // Toggle para screenshots en laboratorios
+        document.querySelectorAll('.toggle-screenshot').forEach(button => {
+            button.addEventListener('click', function() {
+                const labId = this.getAttribute('data-lab');
+                const screenshotDiv = document.getElementById(`screenshot-lab-${labId}`);
+                const commandDiv = document.getElementById(`commands-lab-${labId}`);
+                
+                // Ocultar comandos si están visibles
+                if (commandDiv && !commandDiv.classList.contains('hidden')) {
+                    commandDiv.classList.add('hidden');
+                }
+                
+                // Mostrar/ocultar screenshot
+                screenshotDiv.classList.toggle('hidden');
+                
+                // Cambiar estilo del botón
+                if (screenshotDiv.classList.contains('hidden')) {
+                    this.classList.remove('text-blue-800');
+                    this.classList.add('text-blue-600');
+                } else {
+                    this.classList.remove('text-blue-600');
+                    this.classList.add('text-blue-800');
+                }
+            });
+        });
+        
+        // Formulario de contacto
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // En un entorno real, aquí se enviaría el formulario a un servidor
+            // Para este ejemplo, solo mostraremos un mensaje de confirmación
+            const name = document.getElementById('name').value;
+            
+            // Mostrar alerta de confirmación
+            alert(`¡Gracias ${name}! Tu mensaje ha sido enviado. Te responderé en la mayor brevedad posible.`);
+            
+            // Resetear formulario
+            this.reset();
+        });
+        
+        // Simulación de carga de Disqus
+        document.getElementById('load-disqus').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Cargando comentarios...';
+            this.disabled = true;
+            
+            // Simular tiempo de carga
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-check mr-2"></i> Comentarios cargados';
+                this.classList.remove('bg-blue-600');
+                this.classList.add('bg-green-600');
+                
+                // Mostrar mensaje informativo
+                const disqusSection = this.closest('.text-center');
+                const infoMessage = document.createElement('div');
+                infoMessage.className = 'mt-4 p-4 bg-green-50 text-green-800 rounded-lg';
+                infoMessage.innerHTML = '<p><i class="fas fa-info-circle mr-2"></i> En un entorno real, aquí se cargaría el widget de Disqus con los comentarios de la comunidad.</p>';
+                disqusSection.appendChild(infoMessage);
+            }, 1500);
+        });
+        
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Añadir animación fade-in a elementos al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observar elementos para animación
+        document.querySelectorAll('.lab-card, .bg-gray-50.rounded-xl').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
