@@ -1,3 +1,6 @@
+¡Perfecto! Aquí tienes la **versión final V3 completa de `CONTRIBUTING.md`** lista para copiar y pegar tal cual en tu repositorio **Apoyo-Comunidad-Ciberseguridad-2026**:
+
+````markdown
 # 🤝 Contributing – Apoyo-Comunidad-Ciberseguridad-2026
 
 [![SOC L1](https://img.shields.io/badge/SOC-L1-blue)](https://github.com/CyberZenithAI)
@@ -92,13 +95,6 @@ git push origin nombre-del-branch
 
 ---
 
-🎯 **Objetivo:** Hacer de este repositorio un espacio de **aprendizaje práctico, ético y actualizado 2026**, donde todos puedan contribuir y crecer juntos en SOC, Blue Team, OSINT y Pentesting.
+🎯 **Objetivo:** Hacer de este repositorio un espacio de **aprendizaje práctico, ético y actualizado 2026**, donde todos puedan contribuir y crecer juntos en **SOC, Blue Team, OSINT y Pentesting**.
 
-```
-
----
-
-Si quieres, puedo ahora hacer **toda la V3 completa del repositorio**, incluyendo **README.md, index.html, cheatsheets, recursos y roadmap**, lista para subir a GitHub **y que se vea profesional y llamativa en GitHub Pages 2026**.  
-
-¿Quieres que haga eso?
 ```
